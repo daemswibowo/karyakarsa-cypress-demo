@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         </a>
 
         {show ? (
-          <p className={styles.description}>Thanks for clicking!</p>
+          <p data-testid={'infoThanks'} className={styles.description}>Thanks for clicking!</p>
         ) : null}
       </main>
     </div>
