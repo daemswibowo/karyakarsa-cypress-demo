@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     e.preventDefault();
     setShow(true);
     setTimeout(() => {
-      setShow(false);  
+      setShow(false);
     }, 3000)
   }
   return (
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>Hello World!</h1>
         <br />
         <br />
-        <a onClick={onClickMe} href="#" className={styles.card}>
+        <a data-testid={'btnClickMe'} onClick={onClickMe} href="#" className={styles.card}>
           <h2 style={{ marginBottom: 0 }}>Click Me! &rarr;</h2>
         </a>
 
